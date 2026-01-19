@@ -29,6 +29,7 @@ body{
     background-color: #000000;
     color: #ffffff;
     width: 30%;
+    padding: 0;
 }
 
 ul{
@@ -48,4 +49,9 @@ img{
 
 .card-email{
     text-decoration: none;
+}
+
+.input{
+    width: 33%;
+    margin: 0 auto;
 }
