@@ -28,7 +28,8 @@ body{
     gap: 20px;
     background-color: #000000;
     color: #ffffff;
-    width: 370px;
+    min-width: 310px;
+    width: 365px;
     padding: 0;
     height: 125px;
 }
@@ -54,6 +55,14 @@ img{
 }
 
 .input{
-    width: 33%;
-    margin: 0 auto;
+    min-width: 183px;
+}
+
+.add-new-member-section{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.549);
+    width: 35%;
+    min-width:223px;
+    margin: 10px auto;
+    padding: 40px 20px;
+    border-radius: 20px;
 }
