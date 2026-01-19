@@ -36,4 +36,9 @@ function handleAddNewMember(e){
     teamMembers.push(newMember);
 
     printCard(teamMembers);
+
+    inputName.value = "";
+    inputRole.value = "";
+    inputEmail.value = "";
+    inputProfileImage.value = "";
 }
