@@ -38,4 +38,13 @@ const teamMembers = [
 ];
 
 
+
+const inputName = document.getElementById('name');
+const inputRole = document.getElementById('role');
+const inputEmail = document.getElementById('email');
+const inputProfileImage = document.getElementById('profile-image');
+const addNewMemberForm = document.getElementById('add-new-member-form')
+
+addNewMemberForm.addEventListener("submit",handleAddNewMember);
+
 printCard(teamMembers);

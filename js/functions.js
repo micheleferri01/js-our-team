@@ -2,9 +2,13 @@
 function printCard (object){
     const cardsContainer = document.getElementById('cards-container');
 
+    let cardHtml = "";
+
     for(const member of object){
-        cardsContainer.innerHTML += generateCard(member);
+        cardHtml += generateCard(member);
     }
+
+    cardsContainer.innerHTML = cardHtml
 }
 
 function generateCard ({name, role, email, img}){
@@ -18,4 +22,18 @@ function generateCard ({name, role, email, img}){
         </ul>
     </div>`;
     return htmlCard;
+}
+
+function handleAddNewMember(e){
+    e.preventDefault();
+    const name = inputName.value;
+    const role = inputRole.value;
+    const email = inputEmail.value;
+    const img = inputProfileImage.value;
+
+    const newMember = {name, role, email, img};
+
+    teamMembers.push(newMember);
+
+    printCard(teamMembers);
 }

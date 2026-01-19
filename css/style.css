@@ -30,6 +30,7 @@ body{
     color: #ffffff;
     width: 30%;
     padding: 0;
+    height: 125px;
 }
 
 ul{
@@ -40,6 +41,7 @@ ul{
 
 img{
     width: 125px;
+    height: 125px;
 }
 
 .card-name{
